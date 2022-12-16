@@ -1,0 +1,17 @@
+﻿<Window x:Class="encrytionapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:encrytionapp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblencrytionapp" Content="Encryption App" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.308" FontSize="27"/>
+        <Button x:Name="btnGenererunmotpasse" Content="mot de passe" HorizontalAlignment="Left" Margin="118,266,0,0" VerticalAlignment="Top" Height="40" Width="78"/>
+        <Button x:Name="btnRot13" Content="Rot13" HorizontalAlignment="Left" Margin="270,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.101,-1.952" Height="40" Width="86"/>
+        <Button Content="Vigenere" HorizontalAlignment="Left" Margin="462,266,0,0" VerticalAlignment="Top" Height="40" Width="82"/>
+        <Button x:Name="btnModulo" Content="Modulo" HorizontalAlignment="Left" Margin="638,266,0,0" VerticalAlignment="Top" Height="40" Width="82" RenderTransformOrigin="-0.75,0.715"/>
+
+    </Grid>
+</Window>
