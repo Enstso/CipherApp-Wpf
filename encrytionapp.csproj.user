@@ -7,7 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Fmodulo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frot13.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Fvigenere.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Fmodulo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frot13.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Fvigenere.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

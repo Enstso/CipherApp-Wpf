@@ -23,6 +23,32 @@ namespace encrytionapp
         public MainWindow()
         {
             InitializeComponent();
+            this.btnGenererunmotpasse.Click += BtnGenererunmotpasse_Click;
+            this.btnModulo.Click += BtnModulo_Click;
+            this.btnRot13.Click += BtnRot13_Click;
+            this.btnVigenre.Click += BtnVigenre_Click;
         }
+
+        private void BtnVigenre_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnRot13_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnModulo_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnGenererunmotpasse_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Le mot de passe généré \n");
+        }
+
+        
     }
 }

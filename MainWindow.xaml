@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:encrytionapp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Label x:Name="lblencrytionapp" Content="Encryption App" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.308" FontSize="27"/>
-        <Button x:Name="btnGenererunmotpasse" Content="mot de passe" HorizontalAlignment="Left" Margin="118,266,0,0" VerticalAlignment="Top" Height="40" Width="78"/>
-        <Button x:Name="btnRot13" Content="Rot13" HorizontalAlignment="Left" Margin="270,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.101,-1.952" Height="40" Width="86"/>
-        <Button Content="Vigenere" HorizontalAlignment="Left" Margin="462,266,0,0" VerticalAlignment="Top" Height="40" Width="82"/>
-        <Button x:Name="btnModulo" Content="Modulo" HorizontalAlignment="Left" Margin="638,266,0,0" VerticalAlignment="Top" Height="40" Width="82" RenderTransformOrigin="-0.75,0.715"/>
+        Title="MainWindow" Height="469" Width="765">
+    <Grid x:Name="Main">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/4e591f352012791f90143fe92106730a.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblencrytionapp" Content="Encryption App" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.308" FontSize="27" FontFamily="Calibri" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="btnGenererunmotpasse" Content="Mot de passe" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Height="90" Width="261" FontSize="18" FontFamily="Calibri"  Background="White"/>
+        <Button x:Name="btnRot13" Content="Rot13" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.101,-1.952" Height="90" Width="261" FontSize="18" FontFamily="Calibri" Background="White" />
+        <Button x:Name="btnVigenre" Content="Vigenere" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Height="90" Width="261" FontSize="18" FontFamily="Calibri" Background="White"/>
+        <Button x:Name="btnModulo" Content="Modulo" HorizontalAlignment="Left" Margin="10,345,0,0" VerticalAlignment="Top" Height="90" Width="261" RenderTransformOrigin="-0.75,0.715" FontSize="18" FontFamily="Calibri"  Background="White"/>
+        <Image x:Name="imgCadena" HorizontalAlignment="Left" Height="151" Margin="332,184,0,0" VerticalAlignment="Top" Width="163" Source="/kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png"/>
 
     </Grid>
 </Window>
