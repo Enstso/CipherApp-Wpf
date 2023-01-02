@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Frot13" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/4e591f352012791f90143fe92106730a.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="tbVigenere" HorizontalAlignment="Left" Margin="337,310,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="145" Height="30" RenderTransformOrigin="0.483,0.335"/>
+        <Image x:Name="imgModulo" HorizontalAlignment="Left" Height="136" Margin="329,164,0,0" VerticalAlignment="Top" Width="161" Source="/kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png"/>
+        <Label  x:Name="lblRot13"  Content="Rot 13" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.308" FontSize="27" FontFamily="Calibri" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="btnValider" Content="Valider" HorizontalAlignment="Left" Margin="367,372,0,0" VerticalAlignment="Top" Width="85" Height="28" FontFamily="Calibri" FontSize="18"/>
     </Grid>
 </Window>
