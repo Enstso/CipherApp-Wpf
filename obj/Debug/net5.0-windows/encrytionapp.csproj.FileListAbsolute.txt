@@ -48,3 +48,9 @@ D:\C#\encrytionapp\obj\Debug\net5.0-windows\Frot13.baml
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\Fvigenere.baml
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\MainWindow.g.cs
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\MainWindow.baml
+C:\encrytionapp\obj\Debug\net5.0-windows\Fmodulo.g.cs
+C:\encrytionapp\obj\Debug\net5.0-windows\Frot13.g.cs
+C:\encrytionapp\obj\Debug\net5.0-windows\Fvigenere.g.cs
+C:\encrytionapp\obj\Debug\net5.0-windows\Fmodulo.baml
+C:\encrytionapp\obj\Debug\net5.0-windows\Frot13.baml
+C:\encrytionapp\obj\Debug\net5.0-windows\Fvigenere.baml

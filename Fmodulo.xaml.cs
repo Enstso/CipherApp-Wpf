@@ -22,6 +22,9 @@ namespace encrytionapp
         public Fmodulo()
         {
             InitializeComponent();
+
+           
+
         }
 
         
