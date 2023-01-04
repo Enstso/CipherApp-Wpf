@@ -10,7 +10,7 @@
     <Compile Update="Fmodulo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Frot13.xaml.cs">
+    <Compile Update="FrotN.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Fvigenere.xaml.cs">
@@ -21,10 +21,10 @@
     <Page Update="Fmodulo.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="FrotN.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Frot13.xaml">
+    <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Fvigenere.xaml">

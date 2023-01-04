@@ -41,10 +41,8 @@ D:\C#\encrytionapp\obj\Debug\net5.0-windows\encrytionapp.pdb
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\encrytionapp.genruntimeconfig.cache
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\ref\encrytionapp.dll
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\Fmodulo.g.cs
-D:\C#\encrytionapp\obj\Debug\net5.0-windows\Frot13.g.cs
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\Fvigenere.g.cs
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\Fmodulo.baml
-D:\C#\encrytionapp\obj\Debug\net5.0-windows\Frot13.baml
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\Fvigenere.baml
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\MainWindow.g.cs
 D:\C#\encrytionapp\obj\Debug\net5.0-windows\MainWindow.baml
@@ -54,3 +52,5 @@ C:\encrytionapp\obj\Debug\net5.0-windows\Fvigenere.g.cs
 C:\encrytionapp\obj\Debug\net5.0-windows\Fmodulo.baml
 C:\encrytionapp\obj\Debug\net5.0-windows\Frot13.baml
 C:\encrytionapp\obj\Debug\net5.0-windows\Fvigenere.baml
+D:\C#\encrytionapp\obj\Debug\net5.0-windows\FrotN.g.cs
+D:\C#\encrytionapp\obj\Debug\net5.0-windows\FrotN.baml

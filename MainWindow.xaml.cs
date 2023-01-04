@@ -38,8 +38,8 @@ namespace encrytionapp
         private void BtnRot13_Click(object sender, RoutedEventArgs e)
         {
             
-            Frot13 frot13 = new Frot13();
-            frot13.Show();
+            FrotN frotN = new FrotN();
+            frotN.Show();
         }
 
         private void BtnModulo_Click(object sender, RoutedEventArgs e)
