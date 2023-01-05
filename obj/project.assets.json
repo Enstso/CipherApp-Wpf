@@ -8,23 +8,28 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Soski\\.nuget\\packages\\": {}
+    "C:\\Users\\ejanvier\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\encrytionapp\\encrytionapp.csproj",
+      "projectUniqueName": "C:\\Users\\ejanvier\\Documents\\encrytionapp\\encrytionapp.csproj",
       "projectName": "encrytionapp",
-      "projectPath": "D:\\C#\\encrytionapp\\encrytionapp.csproj",
-      "packagesPath": "C:\\Users\\Soski\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\encrytionapp\\obj\\",
+      "projectPath": "C:\\Users\\ejanvier\\Documents\\encrytionapp\\encrytionapp.csproj",
+      "packagesPath": "C:\\Users\\ejanvier\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ejanvier\\Documents\\encrytionapp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Soski\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ejanvier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows"
+        "net5.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -51,8 +56,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -64,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

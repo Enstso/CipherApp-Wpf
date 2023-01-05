@@ -22,6 +22,7 @@ namespace encrytionapp
         public Fvigenere()
         {
             InitializeComponent();
+            
         }
     }
 }
