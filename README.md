@@ -1,8 +1,8 @@
-# Encryption App
+# Encryption App (Wpf)
 ## Contexte : 
 L'idée de ce projet, m'est venu en faisant une évaluation de mathématique, il y avait un exercice où le but était de coder et décoder des mots :
 
-![ex.PNG](images/ex.PNG)
+![ex.PNG](ex.PNG)
 
 Cette application, permet à un utilisateur de générer un mot de passe fort et de chiffrer et déchiffrer des messages, grâce aux différents algorithmes de chiffrement (modulo,vigenère et rotN(inspiré du rot13)).
 ```plantuml
@@ -19,11 +19,11 @@ package EncryptionApp{
 </br>
 La fenêtre principale :
 
-![Main.PNG](images\Main.PNG)
+![Main.PNG](Main.PNG)
 
 Si je clique sur le bouton Mot de passe une message Box me propose un mot de passe fort :
 
-![mdp.PNG](images\mdp.PNG)
+![mdp.PNG](mdp.PNG)
 
 ## Les différentes techniques de chiffrement :
 
@@ -34,19 +34,19 @@ Le ROT13 (rotate by 13 places) est un cas particulier du chiffre de César, un a
 J'ai fais le choix de personnaliser, cet algorithme en donnant la possibilité à l'utilisateur de chiffrer ou déchiffrer son message avec le décalage de son choix.
 
 
-![rotN](images\RotN.PNG)
+![rotN](RotN.PNG)
 
 Pour tester, je saisis le message Hamster avec un décalage de 3 le résultat devrait être Kdpvwhu:
 
-![rotNhams.PNG](images\rotNhams.PNG)
+![rotNhams.PNG](rotNhams.PNG)
 
 Le résultat :
 
-![result1.PNG](images\result1.PNG)
+![result1.PNG](result1.PNG)
 
 Pour déchiffrer je choisis l'option déchiffrer et je saisis :
 
-![result2.PNG](images\result2.PNG)
+![result2.PNG](result2.PNG)
 
 </br>
 
@@ -56,7 +56,7 @@ Le chiffre de Vigenère est un système de chiffrement par substitution polyalph
 
 </br>
 
-![vigenere.PNG](images\vigenere.PNG)
+![vigenere.PNG](vigenere.PNG)
 
 Le méssage se chiffre à l'aide d'une clé de mot c'est à dire la somme de la position de la lettre dans l'alphabet avec un décalage de -1 (array/list commence à l'index 0) du caractère en cours avec la position du caractère de la clé en cours.
 
@@ -80,11 +80,11 @@ Si je saisis le message "nuageux" le résultat devrait être qwojixz car :
 * U+D=23=X
 * X+C=25=Z
 
-![result3.PNG](images\result3.PNG)
+![result3.PNG](result3.PNG)
 
 Le déchiffrement :
 
-![result4.PNG](images\result4.PNG)
+![result4.PNG](result4.PNG)
 
 </br>
 
@@ -103,11 +103,11 @@ Pour cette situation je vais utiliser le mot Prog
 
 Nous devons donc obtenir le mot Bpuq après le chiffrement du message.
 
-![result5.PNG](images\result5.PNG)
+![result5.PNG](result5.PNG)
 
 Le déchiffrement du message :
 
-![result6.PNG](images\result6.PNG)
+![result6.PNG](result6.PNG)
 
 </br>
 
@@ -116,10 +116,10 @@ Le déchiffrement du message :
 Des controlleurs de saisie ont été mis en place :
 
 - Aucun caractères saisie :
-![control.PNG](images\control.PNG)
+![control.PNG](control.PNG)
 
 - Caractères non autorisé :
-![control1.PNG](images\control1.PNG)
-![control2.PNG](images\control2.PNG)
+![control1.PNG](control1.PNG)
+![control2.PNG](control2.PNG)
 
 Mail développeur : enstso@outlook.fr

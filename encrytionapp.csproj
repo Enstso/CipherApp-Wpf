@@ -7,16 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\4e591f352012791f90143fe92106730a.jpg" />
-    <None Remove="Images\kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png" />
-    <None Remove="Images\pngtree-black-padlock-png-image_3729324.jpg" />
+    <None Remove="images\4e591f352012791f90143fe92106730a.jpg" />
+    <None Remove="images\kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png" />
+    <None Remove="images\pngtree-black-padlock-png-image_3729324.jpg" />
     <None Remove="kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png" />
     <None Remove="pngtree-black-padlock-png-image_3729324.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\4e591f352012791f90143fe92106730a.jpg" />
-    <Resource Include="Images\kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png" />
+    <Resource Include="images\4e591f352012791f90143fe92106730a.jpg" />
+    <Resource Include="images\kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png" />
     <Resource Include="kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png" />
   </ItemGroup>
 

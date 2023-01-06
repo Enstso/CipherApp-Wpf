@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:encrytionapp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="469" Width="765">
+        Title="Fmain" Height="469" Width="765">
+         
     <Grid x:Name="Main">
         <Grid.Background>
             <ImageBrush ImageSource="Images/4e591f352012791f90143fe92106730a.jpg"/>

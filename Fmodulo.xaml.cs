@@ -28,6 +28,7 @@ namespace encrytionapp
             this.btnValider.Click += BtnValider_Click;
             this.rbChiffrer.IsChecked=true;
             
+            
         }
 
         private void BtnValider_Click(object sender, RoutedEventArgs e)
