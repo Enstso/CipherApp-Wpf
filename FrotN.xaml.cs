@@ -34,48 +34,58 @@ namespace encrytionapp
         private void BtnValider_Click(object sender, RoutedEventArgs e)
         {
             bool saisie = Regexm(@"([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){1,30}", this.tbrotNSaisie);
-            bool entier = Regexm(@"^[0 - 9]$| ^1[0 - 9] | ^2[0 -5]$", this.tbrotN);
+            bool entier = Regexm(@"([1-9]?[0-9])|25", this.tbrotN);
             int choice = RadioChoice();
             string maSaisie = RemoveLastLinetb(this.tbrotNSaisie.Text);
             string message = "";
+
+
             switch (choice)
             {
                 case 0:
 
-                    if (saisie == true)
+                    if (saisie == true && entier==true)
                     {
 
                         message = messageChiffré(maSaisie);
-                        MessageBox.Show("Le message chiffré : \n" + message);
+                        MessageBox.Show("Le message chiffré : \n" + message,"Message");
                     }
                     else
                     {
+                        if(entier==false) {
+                            MessageBox.Show("Des caractères non valides ont été détecté, seul les nombres sont acceptées","Attention");
+                        }
                         if (maSaisie != "")
                         {
-                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées");
+                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées","Attention");
                         }
                     }
 
                     break;
                 case 1:
-                    if (saisie == true)
+                    if (saisie == true && entier==true)
                     {
 
                         message = messageDéchiffré(maSaisie);
-                        MessageBox.Show("Le message chiffré : \n" + message);
+                        MessageBox.Show("Le message Déchiffré : \n" + message,"Message");
                     }
                     else
                     {
+                        if (entier == false)
+                        {
+                            MessageBox.Show("Des caractères non valides ont été détecté, seul les nombres sont acceptées","Attention");
+                        }
                         if (maSaisie != "")
                         {
-                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées");
+                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées","Attention");
                         }
                     }
                     break;
                 default:
                     break;
             }
-
+            this.tbrotN.Text = "";
+            this.tbrotNSaisie.Text = "";
         }
 
         private void RbDechiffrer_Checked(object sender, RoutedEventArgs e)
@@ -114,7 +124,6 @@ namespace encrytionapp
             char[] tabMin = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
             string message = "";
             char tempo;
-            int compteur = 0;
             int positionchiff = 0;
             int rotN = Convert.ToInt32(this.tbrotN.Text);
             foreach (char caractère in tbmessage)
@@ -125,10 +134,7 @@ namespace encrytionapp
                     int positionMaj = GetCharPositionInAlphabetMaj(caractère);
                     if (positionMaj + rotN > 25)
                     {
-                        
-                        if (compteur<=rotN) {
-                           
-                        }
+                        positionchiff = rotN -(25 - (positionMaj - 1));
                         tempo = tabMaj[positionchiff];
                     }
                     else
@@ -144,8 +150,8 @@ namespace encrytionapp
                     if (positionMin + rotN > 25)
                     {
 
-                        positionMin = 0;
-                        positionchiff = positionMin + rotN;
+                        
+                        positionchiff = rotN - (25 - (positionMin - 1));
                         tempo = tabMin[positionchiff];
                     }
                     else
@@ -175,8 +181,8 @@ namespace encrytionapp
                     int positionMaj = GetCharPositionInAlphabetMaj(caractère);
                     if (positionMaj - rotN <0)
                     {
-                        positionMaj = 25;
-                        positionchiff = positionMaj - rotN;
+                        
+                        positionchiff = 25-  (rotN-(positionMaj+1));
                         tempo = tabMaj[positionchiff];
                     }
                     else
@@ -189,15 +195,14 @@ namespace encrytionapp
                 else
                 {
                     int positionMin = GetCharPositionInAlphabetMin(caractère);
-                    if (positionMin + rotN<25){
-
-                        positionMin = 0;
-                        positionchiff = positionMin + rotN;
+                    if (positionMin - rotN < 0)
+                    {
+                        positionchiff = 25-(rotN-(positionMin+1));
                         tempo = tabMin[positionchiff];
                     }
                     else
                     {
-                        positionchiff = positionMin + rotN;
+                        positionchiff = positionMin - rotN;
                         tempo = tabMin[positionchiff];
                     }
                 }
@@ -283,7 +288,7 @@ namespace encrytionapp
             List.Remove("");
             if (List.Count == 0)
             {
-                MessageBox.Show("Saisissez un message");
+                MessageBox.Show("Saisissez un message","Attention");
                 return "";
             }
             else

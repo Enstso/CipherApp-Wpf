@@ -44,12 +44,12 @@ namespace encrytionapp
                     {
 
                         message = messageChiffré(maSaisie);
-                        MessageBox.Show("Le message chiffré : \n" + message);
+                        MessageBox.Show("Le message chiffré : \n" + message,"Message");
                     }
                     else
                     {
                         if(maSaisie!=""){
-                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées");
+                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées","Attention");
                         }
                     }
 
@@ -59,20 +59,20 @@ namespace encrytionapp
                     {
 
                         message = messageDéchiffré(maSaisie);
-                        MessageBox.Show("Le message chiffré : \n" + message);
+                        MessageBox.Show("Le message Déchiffré : \n" + message,"Message");
                     }
                     else
                     {
                         if (maSaisie != "")
                         {
-                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées");
+                            MessageBox.Show("Des caractères non valides ont été détecté, seul les lettres sont acceptées","Attention");
                         }
                     }
                     break;
                 default:
                     break;
             }
-          
+            this.tbModuloSaisie.Text = "";
         }
 
         private void RbDechiffrer_Checked(object sender, RoutedEventArgs e)
@@ -235,7 +235,7 @@ namespace encrytionapp
             List.Remove("");
             if (List.Count == 0)
             {
-                MessageBox.Show("Saisissez un message");
+                MessageBox.Show("Saisissez un message","Attention");
                 return "";
             }
             else

@@ -13,7 +13,7 @@
         <Label x:Name="lblencrytionapp" Content="Encryption App" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.308" FontSize="27" FontFamily="Calibri" FontWeight="Bold" Foreground="White"/>
         <Button x:Name="btnGenererunmotpasse" Content="Mot de passe" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Height="90" Width="261" FontSize="18" FontFamily="Calibri"  Background="White"/>
         <Button x:Name="btnRot13" Content="RotN" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.101,-1.952" Height="90" Width="261" FontSize="18" FontFamily="Calibri" Background="White" />
-        <Button x:Name="btnVigenre" Content="Vigenere" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Height="90" Width="261" FontSize="18" FontFamily="Calibri" Background="White"/>
+        <Button x:Name="btnVigenre" Content="Vigenère" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Height="90" Width="261" FontSize="18" FontFamily="Calibri" Background="White"/>
         <Button x:Name="btnModulo" Content="Modulo" HorizontalAlignment="Left" Margin="10,345,0,0" VerticalAlignment="Top" Height="90" Width="261" RenderTransformOrigin="-0.75,0.715" FontSize="18" FontFamily="Calibri"  Background="White"/>
         <Image x:Name="imgCadena" HorizontalAlignment="Left" Height="151" Margin="332,184,0,0" VerticalAlignment="Top" Width="163" Source="/kisspng-padlock-computer-icons-icon-design-symbol-lock-5b360157147cb9.8543979615302659430839.png"/>
 
