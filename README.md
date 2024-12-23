@@ -1,11 +1,12 @@
 # Encryption App (Wpf)
+
 ## Contexte : 
 
-L'idée de ce projet, m'est venu en faisant une évaluation de mathématique, il y avait un exercice où le but était de coder et décoder des mots :
+The idea for this project came to me while doing a mathematics assessment. There was an exercise where the goal was to encode and decode words:
 
 ![ex.PNG](img/ex.PNG)
 
-Cette application, permet à un utilisateur de générer un mot de passe fort et de chiffrer et déchiffrer des messages, grâce aux différents algorithmes de chiffrement (modulo, vigenère et rotN(inspiré du rot13)).
+This application allows a user to generate a strong password and encrypt and decrypt messages using different encryption algorithms (modulo, Vigenère, and rotN, inspired by rot13).
 
 ```plantuml
 @startuml EncryptionApp
@@ -20,34 +21,34 @@ package EncryptionApp{
 ```
 </br>
 
-La fenêtre principale :
+The main window :
 
 ![Main.PNG](img/Main.PNG)
 
-Si je clique sur le bouton Mot de passe une message Box me propose un mot de passe fort :
+If I click on the 'Password' button, a message box will suggest a strong password :
 
 ![mdp.PNG](img/mdp.PNG)
 
-## Les différentes techniques de chiffrement :
+## The Different Encryption Techniques :
 
 ## Rot N :
 
-Le ROT13 (rotate by 13 places) est un cas particulier du chiffre de César, un algorithme simpliste de chiffrement de texte. Comme son nom l’indique, il s’agit d’un décalage de 13 caractères pour chaque lettre du texte à chiffrer.
+ROT13 (rotate by 13 places) is a special case of the Caesar cipher, a simple text encryption algorithm. As its name suggests, it involves shifting each letter of the text to be encrypted by 13 characters.
 
-J'ai fais le choix de personnaliser, cet algorithme en donnant la possibilité à l'utilisateur de chiffrer ou déchiffrer son message avec le décalage de son choix.
+I chose to customize this algorithm by giving the user the ability to encrypt or decrypt their message with a shift of their choice.
 
 
 ![rotN](img/RotN.PNG)
 
-Pour tester, je saisis le message Hamster avec un décalage de 3 le résultat devrait être Kdpvwhu:
+To test, I enter the message 'Hamster' with a shift of 3, the result should be 'Kdpvwhu':
 
 ![rotNhams.PNG](img/rotNhams.PNG)
 
-Le résultat :
+the final result is "Kdpvwhu" :
 
 ![result1.PNG](img/result1.PNG)
 
-Pour déchiffrer je choisis l'option déchiffrer et je saisis :
+To decrypt, I choose the 'decrypt' option and enter :
 
 ![result2.PNG](img/result2.PNG)
 
@@ -55,17 +56,17 @@ Pour déchiffrer je choisis l'option déchiffrer et je saisis :
 
 ## Vigenère :
 
-Le chiffre de Vigenère est un système de chiffrement par substitution polyalphabétique dans lequel une même lettre du message clair peut, suivant sa position dans celui-ci, être remplacée par des lettres différentes.
+The Vigenère cipher is a polyalphabetic substitution encryption system in which the same letter in the plaintext can, depending on its position, be replaced by different letters.
 
 </br>
 
 ![vigenere.PNG](img/vigenere.PNG)
 
-Le message se chiffre à l'aide d'une clé de mot c'est à dire la somme de la position de la lettre dans l'alphabet avec un décalage de -1 (array/list commence à l'index 0) du caractère en cours avec la position du caractère de la clé en cours.
+The message is encrypted using a key word, meaning the sum of the position of the letter in the alphabet with an offset of -1 (array/list starts at index 0) of the current character with the position of the corresponding character in the key.
 
-Dans cette situation la clé était DCODE
+In this situation, the key was DCODE
 
-Les positions :
+The positions :
 
 * D = 3
 * C = 2
@@ -73,7 +74,7 @@ Les positions :
 * D = 3
 * E = 4
 
-Si je saisis le message "nuageux" le résultat devrait être qwojixz car :
+To encrypt the message "nuageux" using the Vigenère cipher with the key "DCODE", let's break down the steps :
 
 * N+D=16=Q
 * U+C=22=W
@@ -85,7 +86,7 @@ Si je saisis le message "nuageux" le résultat devrait être qwojixz car :
 
 ![result3.PNG](img/result3.PNG)
 
-Le déchiffrement :
+decrypt  :
 
 ![result4.PNG](img/result4.PNG)
 
@@ -93,39 +94,35 @@ Le déchiffrement :
 
 ## Modulo :
 
-Pour le dernier algorithme, c'est celui de l'exercice de mathématique le modulo.
+For the last algorithm, it’s the one from the math exercise — the modulo. The result is equal to the position of the current letter * 7, divided by 26, and we keep the remainder of the division as the result.
 
-Le résultat est égal à la position de la lettre en cours * 7 divisé par 26 et c'est le reste de la division que l'on garde comme résultat.
-
-Pour cette situation je vais utiliser le mot Prog
+For this situation, I will use the word Prog :
 
 * B = 7 * 15 % 26
 * p = 7 * 17 % 26
 * u = 7 * 14 % 26
 * q = 7 * 6 % 26
 
-Nous devons donc obtenir le mot Bpuq après le chiffrement du message.
+We must therefore obtain the word Bpuq after encrypting the message :
 
 ![result5.PNG](img/result5.PNG)
 
-Le déchiffrement du message :
+To decrypt the message :
 
 ![result6.PNG](img/result6.PNG)
 
 </br>
 
-## Contrôller la saisie :
+## Control the input :
 
-Des controlleurs de saisie ont été mis en place :
+Input controllers have been put in place :
 
-- Aucun caractères saisie :
+- No characters entered :
 
 ![control.PNG](img/control.PNG)
 
-- Caractères non autorisé :
+- Unauthorized characters :
 
 ![control1.PNG](img/control1.PNG)
 
 ![control2.PNG](img/control2.PNG)
-
-Mail développeur : enstso@outlook.fr
